@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <!--
+    SPDX-FileCopyrightText: Petr Spirka <petrspirka@gmail.com>
+    SPDX-License-Identifier: CC0-1.0
+    -->
+    <id>thesistemplater</id>
+    <name>Thesis Templater</name>
+    <summary>Adds the option to automatically generate and manage thesis directories based on CSV files provided by IS/STAG</summary>
+    <description><![CDATA[Adds the option to automatically generate and manage thesis directories based on CSV files provided by IS/STAG]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="petrspirka@gmail.com" >Petr Spirka</author>
+    <namespace>ThesisTemplater</namespace>
+    <category>tools</category>
+    <bugs>https://github.com/petrspirka/thesistemplater/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="27" max-version="27"/>
+    </dependencies>
+    <navigations>
+        <navigation role="admin">
+            <name>Thesis Templater</name>
+            <route>thesistemplater.page.index</route>
+        </navigation>
+    </navigations>
+    <settings>
+        <admin>OCA\ThesisTemplater\Settings\ThesisTemplaterAdmin</admin>
+        <admin-section>OCA\ThesisTemplater\Sections\ThesisTemplaterAdmin</admin-section>
+    </settings>
+</info>
